@@ -11,7 +11,8 @@ static const unsigned int gappov    = 30;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
+/* static const char *fonts[]          = { "Dejavu:pixelsize=22;1", "fontawesome:pixelsize=15", "Source Han Sans JP,源ノ角ゴシック JP,Source Han Sans JP Medium,源ノ角ゴシック JP Medium:style=Medium,Regular", "Noto Color Emoji" }; */
+static const char *fonts[]          = { "DejaVu Sans Mono:pixelsize=30:antialias=true:autohint=true", "fontawesome:pixelsize=15;" "Source Han Sans JP,源ノ角ゴシック JP,Source Han Sans JP Medium,源ノ角ゴシック JP Medium:style=Medium,Regular;", "Noto Color Emoji" };
 static const char dmenufont[]       = "monospace:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
@@ -159,7 +160,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[11]} },
 	{ MODKEY|ShiftMask,             XK_s,      setlayout,      {.v = &layouts[12]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[13]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
+	/* { MODKEY,                       XK_space,  setlayout,      {0} }, */
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
         { MODKEY,                  XK_apostrophe,  cyclelayout,    {.i = +1} },
         { MODKEY,                  XK_semicolon,   cyclelayout,    {.i = -1} },
