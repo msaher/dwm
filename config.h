@@ -160,8 +160,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[11]} },
 	{ MODKEY|ShiftMask,             XK_s,      setlayout,      {.v = &layouts[12]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[13]} },
-	/* { MODKEY,                       XK_space,  setlayout,      {0} }, */
-	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ Mod1Mask|ShiftMask,           XK_space,  setlayout,      {0} },
+	{ Mod1Mask,                     XK_space,  togglefloating, {0} },
         { MODKEY,                  XK_apostrophe,  cyclelayout,    {.i = +1} },
         { MODKEY,                  XK_semicolon,   cyclelayout,    {.i = -1} },
         { MODKEY,                       XK_p,      layoutmenu,     {0} },
