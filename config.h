@@ -128,8 +128,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_l,      setcfact,       {.f = -0.25} },
 	{ MODKEY|ShiftMask,             XK_o,      setcfact,       {.f =  0.00} },
 	{ MODKEY,                       XK_e,      zoom,           {0} },
-	/* { MODKEY|Mod4Mask,              XK_u,      incrgaps,       {.i = +1 } }, */
-	/* { MODKEY|Mod4Mask|ShiftMask,    XK_u,      incrgaps,       {.i = -1 } }, */
+	{ MODKEY,                       XK_i,      incrgaps,       {.i = +1 } },
+	{ MODKEY,                       XK_o,      incrgaps,       {.i = -1 } },
 	/* { MODKEY|Mod4Mask,              XK_i,      incrigaps,      {.i = +1 } }, */
 	/* { MODKEY|Mod4Mask|ShiftMask,    XK_i,      incrigaps,      {.i = -1 } }, */
 	/* { MODKEY|Mod4Mask,              XK_o,      incrogaps,      {.i = +1 } }, */
