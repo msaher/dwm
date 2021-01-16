@@ -11,6 +11,7 @@ static const unsigned int gappov    = 30;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int startontag         = 1;        /* 0 means no tag active on start */
 /* static const char *fonts[]          = { "Dejavu:pixelsize=22;1", "fontawesome:pixelsize=15", "Source Han Sans JP,源ノ角ゴシック JP,Source Han Sans JP Medium,源ノ角ゴシック JP Medium:style=Medium,Regular", "Noto Color Emoji" }; */
 static const char *fonts[]          = { "DejaVu Sans Mono:pixelsize=30:antialias=true:autohint=true", "fontawesome:pixelsize=15;" "Source Han Sans JP,源ノ角ゴシック JP,Source Han Sans JP Medium,源ノ角ゴシック JP Medium:style=Medium,Regular;", "Noto Color Emoji" };
 static const char dmenufont[]       = "monospace:size=10";
